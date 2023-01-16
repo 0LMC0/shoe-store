@@ -1,0 +1,48 @@
+.header{
+    font-family: var(--text-font);
+    padding: 36px 100px 36px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.HeaderLogo{
+    width: 6rem;
+    margin-left: 80px;
+}
+
+.headerTabsContainer{
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.icons-header{
+    position: relative;
+    top: 3px;
+}
+
+.headerTab{
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0px 24px;
+    color: var(--white-grey);
+}
+
+.headerTabsContainer :hover{
+    color: rgb(255, 158, 158);
+}
+
+.headerTabsContainer :active{
+    color: rgb(255, 0, 0);
+}
+
+.headerTabActive{
+    transition: var(--transition);
+    text-decoration: underline;
+    margin: 0px 24px;
+    font-size: 18px;
+    font-weight: 700;
+}

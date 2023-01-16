@@ -1,0 +1,47 @@
+.footer{
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(248,254,255,0.7959558823529411) 69%, rgba(248,254,255,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(248,254,255,0.7959558823529411) 69%, rgba(248,254,255,0) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(248,254,255,0.7959558823529411) 69%, rgba(248,254,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f8feff",GradientType=1);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 0; 
+    align-items: center;
+}
+
+.footerImages-wrapper{
+    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-product-image{
+    margin-right: 32px;
+    border-radius: 12px;
+    width: 6rem;
+}
+
+.footer-socials{
+    height: 100%;
+    display: flex;
+    margin-right: 12px;
+    border-radius: 12px;
+}
+
+.footer-socials a{
+    background: var(--primary);
+    padding: 5px 10px 0 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--white);
+    margin: 3rem 1rem 0 0;
+    font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+    .footer {
+      flex-direction: column;
+    }
+  }

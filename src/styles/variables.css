@@ -1,0 +1,27 @@
+/* poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+@font-face {
+    font-family: 'monumentExtra';
+    src: local('MonumentExtended-Regular'), url(../assets/fonts/MonumentExtended-Regular.otf) format('truetype');
+}
+
+:root{
+    /* color */
+    --primary: #ff0000;
+    --bg-color: #ccc6c2;
+    --white-grey: rgb(250, 250, 250);
+    --white: #fff;
+    --black: #000;
+    --shade-black: #373737;
+    --shade-black-2: #333333;
+    --footer-bg: #f6f0f0;
+
+     /* transition */
+     --transition: all 400ms ease;
+
+     /* fonts */
+     --titles-font: 'monumentExtra';
+     --text-font: 'Poppins', sans-serif;
+}
