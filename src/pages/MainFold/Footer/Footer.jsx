@@ -1,9 +1,9 @@
 import React from 'react'
 import "./footer.css"
 // img
-import imgFooter1 from '../../assets/img/footer/travis.png'
-import imgFooter2 from '../../assets/img//footer/sbdunka.png'
-import imgFooter3 from '../../assets/img/footer/sbgulf.png'
+import imgFooter1 from '../../../assets/img/footer/travis.png'
+import imgFooter2 from '../../../assets/img//footer/sbdunka.png'
+import imgFooter3 from '../../../assets/img/footer/sbgulf.png'
 // reacticons
 import {ImWhatsapp} from 'react-icons/im'
 import {BsInstagram} from 'react-icons/bs'

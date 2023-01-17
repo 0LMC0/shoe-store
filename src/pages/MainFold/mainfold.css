@@ -2,18 +2,19 @@
     display: flex;
     align-content: center;
     align-items: center;
+    
 }
 
 .mainFold{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     flex-grow: 1;
 }
 
 .mainFold-content{
-    max-width: 50%;
+    max-width: 45%;
      margin-left: 80px;
      color: var(--white-grey);
 }
@@ -57,7 +58,18 @@
     border: none;
 }
 
-.mainFold-btn .verified-user, .downleft-arrow{
+.mainFold-btn-myrst{
+    cursor: pointer;
+    font-family: var(--text-font);
+    background-color: var(--black);
+    color: var(--white);
+    padding: 16px 50px;
+    border-radius: 10px;
+    margin-right: 24px;
+    border: none;
+}
+
+.icon-mainfold, .downleft-arrow{
     position: relative;
     top: 3px;
 }
@@ -74,11 +86,11 @@
 
 .overlayImg{
     position: absolute;
-    top: 10rem;
+    top: 13rem;
     right: -100px;
     transform: translateY(-2%);
     transform: rotate(-10deg); 
-    width: 65vw;
+    width: 55vw;
     z-index: 1;
     overflow: hidden;
 }

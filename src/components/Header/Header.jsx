@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom'
 import {AiFillCaretDown} from 'react-icons/ai'
 import {BiHomeAlt} from 'react-icons/bi'
 import {RiContactsLine} from 'react-icons/ri'
+import { MdSell } from 'react-icons/md'
 
 
 
@@ -24,8 +25,9 @@ const navActive = ({ isActive }) => isActive ? 'headerTabActive headerTab' : 'he
 
        <div className='headerTabsContainer'>
         <NavLink className={navActive} to="/"><BiHomeAlt className='icons-header'/> Home</NavLink>
-        <NavLink className={navActive} to="/zapatillas"><AiFillCaretDown className='icons-header'/> Zapatillas <AiFillCaretDown className='downarrow-zapatillas'/></NavLink>
+        <NavLink className={navActive} to="/zapatillas"><AiFillCaretDown className='icons-header'/> Zapatillas <AiFillCaretDown className='icons-header'/></NavLink>
         <NavLink className={navActive} to="/contacto"><RiContactsLine className='icons-header' /> Contacto</NavLink>
+        <NavLink className={navActive} to="/mayoristas"><MdSell className='icons-header' /> Mayoristas</NavLink>
        </div>
     </div>
   )
