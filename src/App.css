@@ -1,5 +1,11 @@
 @import url("./styles/variables.css");
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .app{
     background-image: url(./assets/img/bg/bg.png);
     min-height: 100vh;

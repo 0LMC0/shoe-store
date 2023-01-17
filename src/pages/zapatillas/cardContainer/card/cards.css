@@ -1,0 +1,111 @@
+.card-container{
+    color: var(--white);
+    width: 100%;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.product-card{
+    width: 20rem;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.3px);
+    -webkit-backdrop-filter: blur(12.3px);
+    margin: 30px 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.product-img{
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+
+.product-title{
+    text-transform: uppercase;
+    font-family: var(--titles-font);
+    font-size: 15px;
+    color: var(--primary);
+    padding: 10px 0;
+}
+
+.product-logo{
+    padding: 10px 0 5px 5px;
+    height: 3rem;
+    width: fit-content;
+}
+.product-description{
+    font-family: var(--text-font);
+    font-size: 9px;
+}
+
+.product-price{
+    padding: 10px 0;
+    font-size: 30px;
+    font-family: var(--titles-font);
+}
+
+.product-digits{
+    font-size: 10px;
+}
+
+.product-sell{
+    font-family: var(--text-font);;
+}
+
+.product-btn{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-family: var(--text-font);
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 16px 50px;
+    border-radius: 10px;
+    margin-right: 24px;
+    border: none;
+}
+
+.icon-stock-true{
+    position: relative;
+    top: 5px;
+    font-size: 1.5rem;
+    color: rgb(85, 255, 0);
+}
+
+.icon-stock-cross{
+    position: relative;
+    top: 4px;
+    font-size: 1rem;
+    color: rgb(255, 0, 0);
+}
+
+.product-oferta{
+    font-family: var(--text-font);
+    padding: 5px 0;
+    margin: 10px 0;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    background: rgba(255, 255, 255, 0.205);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.3px);
+    -webkit-backdrop-filter: blur(12.3px);
+    color: var(--shade-white);
+    display: flex;
+    justify-content: center;
+}
+
+.product-oferta-icon{
+    position: relative;
+    color: rgb(85, 255, 0);
+    font-size: 2rem;
+}
