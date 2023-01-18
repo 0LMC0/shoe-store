@@ -98,7 +98,7 @@
     transform: translateY(-2%);
     transform: rotate(-10deg); 
     width: 55vw;
-    z-index: 98;
+    z-index: 99!important;
     overflow: hidden;
 }
 

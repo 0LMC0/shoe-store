@@ -1,11 +1,13 @@
 .contact_container{
-    width: 90vw;
+    width: 80vw;
     height: 90%;
     margin: 0 30px 50px ;
     display: flex;
     flex-direction: column;
-    align-items: start;
     text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
 }
 
 
@@ -17,21 +19,23 @@
 .subtitle-contact{
     font-family: var(--titles-font);
     color: var(--white);
-    font-size: 1.5em;
+    font-size: 0.7em;
     margin-bottom: 1rem;
 }
 
 .title-contact{
     font-family: var(--titles-font);
     color: var(--white);
-    font-size: 2.5em;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    padding: 10px 0;
 }
 
 /* form css */
 
 ::-webkit-input-placeholder{
     color: var(--white);
-    font-size: 12px;
+    font-size: 13px;
     text-transform: capitalize;
     font-family: var(--text-font);
 }
@@ -40,22 +44,45 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1.2;
-    background-color: var(--shade-black);   
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 15px;
     border-radius: 12px;
     width: 30%;
     height: auto;
+    
 }
+
 input, textarea{
     width: 100%;
     padding: 0.7rem;
     margin: 5px 0;
-    border-radius: 0.5rem;
-    background: transparent;
-    border: 1px solid var(--primary);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.311);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: none;
     resize: none;
     color: var(--colorWhite);
+}
+
+.submit-contact{
+    width: 100%;
+    cursor: pointer;
+    font-family: var(--text-font);
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 16px 0;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: none;
 }
 
 /* ------------ MEDIA QUERYS (MEDIA DEVICES // MOBILE)  -------------- */

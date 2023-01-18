@@ -9,8 +9,6 @@
     justify-content: space-between;
     padding: 47px 0; 
     align-items: center;
-    z-index: 1;
-
 }
 
 .footerImages-wrapper{
@@ -40,6 +38,30 @@
     color: var(--white);
     margin: 3rem 1rem 0 0;
     font-size: 2rem;
+}
+
+.us-practienda{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 10px;
+    font-family: var(--text-font);
+    text-align: start;
+}
+
+.us-practienda p{
+    margin-right: 5px;
+}
+
+.us-practienda a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+
+.us-practienda a span{
+    color: rgb(43, 255, 0);
 }
 
 @media (max-width: 600px) {

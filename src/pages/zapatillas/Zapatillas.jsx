@@ -10,9 +10,9 @@ const Zapatillas = () => {
   return (
     
     <m.div 
-    initial={{ width: 0, x: 50}} 
-    animate={{ width: "80%", x: 0 }} 
-    transition={{duration: 2.5}}
+    initial={{ x : 100}} 
+    animate={{ x: 0 }} 
+    transition={{duration: 1, ease: "easeIn"}}
     exit={{ x: "-100%",  transition:{duration: 0.5}}}
     className='shoes-container'>
       <img className='banner-principal' src={bannerPrincipal} alt="" />

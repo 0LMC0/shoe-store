@@ -5,12 +5,14 @@ import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import AnimatedRoutes from "./components/AnimatedRoutes";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
     return <div className="app">
         <Router>
             <Header />
-            <AnimatedRoutes />
+                <AnimatedRoutes />
+            <Footer />
         </Router>
     </div>;
 };

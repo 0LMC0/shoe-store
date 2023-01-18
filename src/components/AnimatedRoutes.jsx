@@ -8,6 +8,7 @@ import NotFound from "../pages/notFound/NotFound";
 import Myrst from "../pages/mayorista/Myrst";
 // fm
 import { AnimatePresence } from "framer-motion";
+import Footer from './Footer/Footer';
 
 const AnimatedRoutes = () => {
 
