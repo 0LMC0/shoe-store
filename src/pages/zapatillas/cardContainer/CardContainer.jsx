@@ -27,7 +27,7 @@ const CardContainer = () => {
         },
         {
             id: 2,
-            name: "adidas",
+            name: "Nike SB gulf",
             descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam minus voluptatem modi non debitis nemo cum iure, error repellendus deserunt delectus a aperiam, distinctio qui.",
             img: img2,
             price: "9000",
@@ -38,7 +38,7 @@ const CardContainer = () => {
         },
         {
             id: 3,
-            name: "puma",
+            name: "Nike sb gulf special edition",
             descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam minus voluptatem modi non debitis nemo cum iure, error repellendus deserunt delectus a aperiam, distinctio qui.",
             img: img3,
             price: "55000",
@@ -49,9 +49,9 @@ const CardContainer = () => {
         },
         {
             id: 4,
-            name: "fila",
+            name: "nike air jordan travis scott",
             descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam minus voluptatem modi non debitis nemo cum iure, error repellendus deserunt delectus a aperiam, distinctio qui.",
-            img: fila,
+            img: img1,
             price: "55000",
             condicion: "Nuevo",
             stock: true,
