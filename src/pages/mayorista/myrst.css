@@ -1,0 +1,158 @@
+.myrst_container{
+    width: 40vw;
+    height: 90%;
+    margin: 0 30px 50px ;
+    display: flex;
+    gap: 1.5rem;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+
+.logo-myrst{
+    width: 4rem;
+    padding: 10px;
+}
+
+.subtitle-myrst{
+    font-family: var(--titles-font);
+    color: var(--white);
+    font-size: 0.9em;
+    text-transform: capitalize;
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+.title-myrst{
+    font-family: var(--titles-font);
+    color: var(--white);
+    font-size: 1.3em;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+/* form css */
+
+::-webkit-input-placeholder{
+    color: var(--white);
+    font-size: 13px;
+    text-transform: capitalize;
+    font-family: var(--text-font);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2;
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+    
+}
+
+input, textarea{
+    width: 100%;
+    padding: 0.7rem;
+    margin: 5px 0;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.311);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: none;
+    resize: none;
+    color: var(--colorWhite);
+}
+
+.submit-myrst{
+    width: 100%;
+    cursor: pointer;
+    font-family: var(--text-font);
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 16px 0;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: none;
+}
+
+.info-myrst{
+    width: 100%;
+    text-align: center;
+    color: var(--primary);
+    text-decoration: none;
+    background-color: var(--white);
+    border-radius: 15px;
+    margin: 20px 0 5px 0;
+}
+
+.info-myrst h3{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: var(--text-font);   
+}
+
+.info-myrst p{
+    font-family: var(--text-font);
+    text-transform: capitalize;
+    font-size: 0.8rem;
+}
+
+.icon-myrst{
+    color: rgb(26, 255, 0);
+   position: relative;
+   top: 2px;
+}
+
+.contact-button-to{  
+    font-size: 12px;
+    width: 80%;
+    cursor: pointer;
+    font-family: var(--text-font);
+    background-color: var(--black);
+    color: var(--white);
+    margin: 12px 0;
+    padding: 8px 0px;
+    border-radius: 10px;
+    border: none;
+}
+
+.pass-forgot{  
+    text-align: start;
+    font-size: 12px;
+    width: 100%;
+    cursor: pointer;
+    font-family: var(--text-font);
+    color: rgb(0, 242, 255);
+    padding: 8px 0px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+/* ------------ MEDIA QUERYS (MEDIA DEVICES // MOBILE)  -------------- */
+@media screen and (max-width: 600px) {
+    .myrst_container{
+        width: var(--containerWidthSm);
+    }
+}
+
+
+/* ------------ MEDIA QUERYS (MEDIA DEVICES // TABLETS)  -------------- */
+@media screen and (max-width: 1024px) {
+    .myrst_container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

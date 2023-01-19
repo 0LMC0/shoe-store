@@ -9,7 +9,7 @@
 }
 
 .product-card{
-    height: 85vh;
+    height: auto;
     width: 14rem;
     background: rgba(255, 255, 255, 0.06);
     border-radius: 16px;
@@ -76,6 +76,26 @@
     border-radius: 10px;
     margin-right: 24px;
     border: none;
+}
+
+.product-btn-cart{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-family: var(--text-font);
+    background-color: var(--shade-black);
+    color: var(--white);
+    padding: 12px 12px;
+    border-radius: 10px;
+    margin-right: 24px;
+    border: none;
+}
+
+.icon-card{
+    position: relative;
+    top: 2px;
+
 }
 
 .icon-stock-true{

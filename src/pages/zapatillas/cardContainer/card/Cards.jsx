@@ -1,9 +1,11 @@
 import React from 'react'
 import {TiTick} from 'react-icons/ti'
 import {ImCross} from 'react-icons/im'
-import {FaPercentage} from 'react-icons/fa'
+import {FaPercentage, FaCartPlus} from 'react-icons/fa'
 import {BsFillCaretDownFill} from 'react-icons/bs'
 import { motion as m } from 'framer-motion'
+
+
 
 // ri
 import {BsArrowRightSquareFill} from "react-icons/bs"
@@ -35,7 +37,8 @@ const Card = ({prop}) => {
                         <BsFillCaretDownFill className='product-oferta-icon-arrow'/>
                         </div>
                             }
-                    <button className='product-btn'>Pedinos la tuya! <BsArrowRightSquareFill/></button>
+                    <button className='product-btn'>Ver detalle <BsArrowRightSquareFill className='icon-card'/></button>
+                    <button className='product-btn-cart'>Agregar al carrito <FaCartPlus className='icon-card' /></button>
                 </m.div>
             </div>
         ))}
