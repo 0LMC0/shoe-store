@@ -11,11 +11,21 @@
 .product-card{
     height: auto;
     width: 14rem;
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(0, 0, 0, 0.71);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(12.3px);
-    -webkit-backdrop-filter: blur(12.3px);
+    margin: 30px 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card-skeleton{
+    height: 500px;
+    width: 14rem;
+    background: rgba(0, 0, 0, 0.71);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     margin: 30px 20px;
     padding: 15px;
     display: flex;

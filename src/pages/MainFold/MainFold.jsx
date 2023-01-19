@@ -17,10 +17,10 @@ const MainFold = () => {
     <>
     
     <m.div 
-          initial={{opacity:0, x : 100}} 
-          animate={{opacity:1, x: 0 }} 
-          transition={{duration: 1.5, ease: "easeIn"}}
-          exit={{ x: "-100%",  transition:{duration: 0.5}}}
+          initial={{opacity:0, y : 100}} 
+          animate={{opacity:1, y: 0 }} 
+          transition={{duration: 2, ease: "easeIn"}}
+          exit={{ opacity:0, y: "-100%",  transition:{duration: 0.5}}}
     className="main-container">
     <div className='container-mainfold'>
     <div className='mainFold'>
@@ -53,16 +53,13 @@ const MainFold = () => {
         </div>
       </div>
     </div>
+      <m.img
+        whileHover={{ scale: [null, 1.20, 1.05] }}
+        transition={{ duration: 0.3 }} 
+      src={overlay} alt="overlay" className='overlayImg' />
     </div>
       </m.div>
-    <m.div
-       initial={{ opacity: 0}} 
-       animate={{ opacity: 1 }} 
-       transition={{duration: 0.1}}
-      exit={{ opacity: 0}}
-    >
-      <img src={overlay} alt="overlay" className='overlayImg' />
-    </m.div>
+  
     </>
   )
 }

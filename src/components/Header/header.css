@@ -31,6 +31,24 @@
     color: var(--white-grey);
 }
 
+.headerTab-myrst{
+    text-decoration: none;
+    background-color: var(--primary);
+    cursor: pointer;
+    margin: 0px 24px;
+    border-radius: 12px;
+    padding: 10px;
+    color: var(--white);
+}
+
+.headerTabsContainer :hover{
+    color: rgb(255, 158, 158);
+}
+
+.headerTabsContainer :active{
+    color: rgb(255, 0, 0);
+}
+
 .headerTabsContainer :hover{
     color: rgb(255, 158, 158);
 }
@@ -40,6 +58,14 @@
 }
 
 .headerTabActive{
+    transition: var(--transition);
+    text-decoration: underline;
+    margin: 0px 24px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.headerTabActive-myrst{
     transition: var(--transition);
     text-decoration: underline;
     margin: 0px 24px;

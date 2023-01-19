@@ -62,22 +62,22 @@ const CardContainer = () => {
 
     const [Data, setData] = useState([]);
 
+   
+
     useEffect(() => {
       const getData = new Promise(res =>{
         setTimeout(() => {
-            res(propsSubstitute)
-        }, 1500)
-      })      
-    
-      getData
-      .then(res => setData(res))
-      .catch((err) => console.log(err));
+            res(propsSubstitute)})
+        }, 5000);
+      return () => getData
+                  .then(res => setData(res))
+                  .catch((err) => console.log(err));
       
     }, [])
 
   return (
     <div className='list-cards'>
-            <Card prop={Data} />
+        <Card prop={Data} />
     </div>
   )
 }

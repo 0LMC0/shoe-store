@@ -26,10 +26,10 @@ const Contact = () => {
   return (
     <section>
       <m.div
-      initial={{opacity:0, y: 100, x : 100}} 
-      animate={{opacity:1, y: 0, x: 0 }} 
-      transition={{duration: 0.5, ease: "easeIn"}}
-      exit={{ x: "-100%",  transition:{duration: 0.5}}}
+          initial={{opacity:0, y : 100}} 
+          animate={{opacity:1, y: 0 }} 
+          transition={{duration: 2, ease: "easeIn"}}
+          exit={{ opacity:0, y: "-100%",  transition:{duration: 0.5}}}
       className="container contact_container">
       <form ref={ form } onSubmit={ sendEmail }>
       <img className="logo-contact" src={logo} alt="" />

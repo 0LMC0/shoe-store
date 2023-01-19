@@ -15,10 +15,10 @@ const Myrst = () => {
   return (
     <section>
       <m.div
-      initial={{ y: 100, x : 100}} 
-      animate={{ y: 0, x: 0 }} 
-      transition={{duration: 0.5, ease: "easeIn"}}
-      exit={{ x: "-100%",  transition:{duration: 0.5}}}
+          initial={{opacity:0, y : 100}} 
+          animate={{opacity: 1, y: 0 }} 
+          transition={{duration: 2, ease: "easeIn"}}
+          exit={{ opacity:0, y: "-100%",  transition:{duration: 0.5}}}
       className="container myrst_container">
       <form>
       <img className="logo-myrst" src={logo} alt="" />

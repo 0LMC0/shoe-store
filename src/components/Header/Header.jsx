@@ -14,6 +14,7 @@ import { MdSell } from 'react-icons/md'
 const Header = () => {
  
 const navActive = ({ isActive }) => isActive ? 'headerTabActive headerTab' : 'headerTab';
+const myrst = ({ isActive }) => isActive ? 'headerTabActive headerTab-myrst' : 'headerTab-myrst';
 
   return (
     <div className='header'>
@@ -27,7 +28,7 @@ const navActive = ({ isActive }) => isActive ? 'headerTabActive headerTab' : 'he
         <NavLink className={navActive} to="/"><BiHomeAlt className='icons-header'/> Home</NavLink>
         <NavLink className={navActive} to="/zapatillas"><AiFillCaretDown className='icons-header'/> Zapatillas <AiFillCaretDown className='icons-header'/></NavLink>
         <NavLink className={navActive} to="/contacto"><RiContactsLine className='icons-header' /> Contacto</NavLink>
-        <NavLink className={navActive} to="/mayoristas"><MdSell className='icons-header' /> Mayoristas</NavLink>
+        <NavLink className={myrst} to="/mayoristas"><MdSell className='icons-header' /> Mayoristas</NavLink>
        </div>
     </div>
   )
