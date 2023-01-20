@@ -83,7 +83,6 @@ const Card = ({prop}) => {
                            transition={{ duration: 0.3 }} 
                            className='product-card'>
                            <img className='product-img' src={producto.img} alt="" />
-                           <img className='product-logo' src={producto.logo} alt="" />
                            <h1 className='product-title'>{producto.name}</h1>
                            <p className='product-price'>${producto.price} <small className='product-digits'>99</small>_</p>
                            <small className='product-condition'>Condicion= {producto.condicion}</small>
