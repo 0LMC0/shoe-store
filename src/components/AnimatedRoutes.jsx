@@ -8,7 +8,7 @@ import NotFound from "../pages/notFound/NotFound";
 import Myrst from "../pages/mayorista/Myrst";
 // fm
 import { AnimatePresence } from "framer-motion";
-import Footer from './Footer/Footer';
+import DetailContainer from '../pages/zapatillas/Detail/DetailContainer/DetailContainer';
 
 const AnimatedRoutes = () => {
 
@@ -18,6 +18,7 @@ const AnimatedRoutes = () => {
     <AnimatePresence>
         <Routes location={location} key={location.pathname}>
             <Route path="/" element={<MainFold />} />
+            <Route path="/zapatillas/:productId" element={<DetailContainer />}/>
             <Route path="/zapatillas" element={<Zapatillas />} />
             <Route path="/contacto" element={<Contact />} />
             <Route path="/mayoristas" element={<Myrst />} />

@@ -39,13 +39,13 @@ const MainFold = () => {
         <p className='mainFold-description'>¿Estas buscando tu proximo par de zapas? Llegaste al lugar correcto! Tenemos muchas marcas y modelos disponibles en todos los talles. <br /> <strong > Chequea el catalogo haciendo click en el boton <BsFillArrowDownLeftSquareFill className='downleft-arrow' /></strong></p>
         <div className='mainFold-price-btn'>
         <m.button
-            className='mainFold-btn'
+            className='btn btn-primary'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}>
               <Link to="/zapatillas" className='btn-link' > Ver catalogo <MdVerifiedUser className='icon-mainfold'/></Link>
         </m.button>
         <m.button
-          className='mainFold-btn-myrst'
+          className='btn btn-secondary'
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}>
           <Link to="/mayoristas" className='btn-link' > Comenza a revender <MdSell className='icon-mainfold'/></Link>

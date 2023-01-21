@@ -11,7 +11,7 @@ const App = () => {
     return <div className="app">
         <Router>
             <Header />
-                <AnimatedRoutes />
+                  <AnimatedRoutes />
             <Footer />
         </Router>
     </div>;

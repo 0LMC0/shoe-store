@@ -54,28 +54,6 @@
     padding: 16px 50px;
 }
 
-.mainFold-btn{
-    cursor: pointer;
-    font-family: var(--text-font);
-    background-color: var(--primary);
-    color: var(--white);
-    padding: 16px 0;
-    border-radius: 10px;
-    margin-right: 24px;
-    border: none;
-}
-
-.mainFold-btn-myrst{
-    cursor: pointer;
-    font-family: var(--text-font);
-    background-color: var(--black);
-    color: var(--white);
-    padding: 16px 0px;
-    border-radius: 10px;
-    margin-right: 24px;
-    border: none;
-}
-
 .icon-mainfold, .downleft-arrow{
     position: relative;
     top: 3px;

@@ -24,4 +24,26 @@
      /* fonts */
      --titles-font: 'monumentExtra';
      --text-font: 'Poppins', sans-serif;
-}
+
+     
+    }
+    
+    /* buttons */
+    .btn  {
+            cursor: pointer;
+            font-family: var(--text-font);
+            padding: 16px 0px;
+            border-radius: 10px;
+            margin-right: 24px;
+            border: none;
+        }
+            
+    .btn-primary{
+        background-color: var(--primary);
+        color: var(--white);
+    } 
+
+    .btn-secondary{
+        background-color: var(--black);
+        color: var(--white);
+    }

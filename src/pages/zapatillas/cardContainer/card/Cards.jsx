@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import {Link} from 'react-router-dom'
 import {TiTick} from 'react-icons/ti'
 import {ImCross} from 'react-icons/im'
 import {FaPercentage, FaCartPlus} from 'react-icons/fa'
@@ -99,7 +100,7 @@ const Card = ({prop}) => {
                                <BsFillCaretDownFill className='product-oferta-icon-arrow'/>
                                </div>
                                    }
-                           <button className='product-btn'>Ver detalle <BsArrowRightSquareFill className='icon-card'/></button>
+                           <Link to={`/zapatillas/${producto.id}`} className='product-btn'>Ver detalle <BsArrowRightSquareFill className='icon-card'/></Link>
                            <button className='product-btn-cart'>Agregar al carrito <FaCartPlus className='icon-card' /></button>
                        </m.div>
                    </div>
