@@ -8,13 +8,14 @@ import {AiFillCaretDown} from 'react-icons/ai'
 import {BiHomeAlt} from 'react-icons/bi'
 import {RiContactsLine} from 'react-icons/ri'
 import { MdSell } from 'react-icons/md'
-
+import { FaShoppingCart } from 'react-icons/fa'
 
 
 const Header = () => {
- 
-const navActive = ({ isActive }) => isActive ? 'headerTabActive headerTab' : 'headerTab';
-const myrst = ({ isActive }) => isActive ? 'headerTabActive headerTab-myrst' : 'headerTab-myrst';
+
+  // active tabs
+  const navActive = ({ isActive }) => isActive ? 'headerTabActive headerTab' : 'headerTab';
+  const myrst = ({ isActive }) => isActive ? 'headerTabActive headerTab-myrst' : 'headerTab-myrst';
 
   return (
     <div className='header'>
@@ -29,6 +30,7 @@ const myrst = ({ isActive }) => isActive ? 'headerTabActive headerTab-myrst' : '
         <NavLink className={navActive} to="/zapatillas"><AiFillCaretDown className='icons-header'/> Zapatillas <AiFillCaretDown className='icons-header'/></NavLink>
         <NavLink className={navActive} to="/contacto"><RiContactsLine className='icons-header' /> Contacto</NavLink>
         <NavLink className={myrst} to="/mayoristas"><MdSell className='icons-header' /> Mayoristas</NavLink>
+        <NavLink className={navActive} to="/carrito"><FaShoppingCart className='icons-header'/>0</NavLink>
        </div>
     </div>
   )

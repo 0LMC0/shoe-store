@@ -7,13 +7,18 @@ import { BrowserRouter as Router } from "react-router-dom";
 import AnimatedRoutes from "./components/AnimatedRoutes";
 import Footer from "./components/Footer/Footer";
 
+import { Context } from "./context/CartContext";
+
+
 const App = () => {
     return <div className="app">
-        <Router>
-            <Header />
-                  <AnimatedRoutes />
-            <Footer />
-        </Router>
+            <Router>
+                <Context>
+                    <Header />
+                        <AnimatedRoutes />
+                    <Footer />
+                </Context>
+            </Router> 
     </div>;
 };
 

@@ -9,6 +9,7 @@ import Myrst from "../pages/mayorista/Myrst";
 // fm
 import { AnimatePresence } from "framer-motion";
 import DetailContainer from '../pages/zapatillas/Detail/DetailContainer/DetailContainer';
+import Cart from './cart/Cart';
 
 const AnimatedRoutes = () => {
 
@@ -22,6 +23,7 @@ const AnimatedRoutes = () => {
             <Route path="/zapatillas" element={<Zapatillas />} />
             <Route path="/contacto" element={<Contact />} />
             <Route path="/mayoristas" element={<Myrst />} />
+            <Route path='/carrito' element={<Cart />}/>
             <Route path="*" element={<NotFound />} />
         </Routes>
     </AnimatePresence>

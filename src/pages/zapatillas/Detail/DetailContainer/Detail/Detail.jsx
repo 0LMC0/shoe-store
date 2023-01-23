@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './detail.css'
 import pago from '../../../../../assets/img/zptlls/pago.jpg'
 import {BsCartPlus} from 'react-icons/bs'
@@ -7,12 +7,17 @@ import { Link } from 'react-router-dom'
 import { TiTick } from 'react-icons/ti'
 import { ImCross } from 'react-icons/im'
 import RelatedProducts from './RelatedProducts/RelatedProducts'
-// Swiper.js
-
-
+import { CartContext } from '../../../../../context/CartContext'
+import swal from 'sweetalert'
 
 const Detail = ({detail}) => {
-  return (
+
+  const globalState = useContext(CartContext)
+  const dispatch = globalState.dispatch;
+
+  detail.quantity =1;
+
+  return  (
     <div className='container'>
     <div className='product-detail-container'>
       <div className='product-detail'>
@@ -21,7 +26,7 @@ const Detail = ({detail}) => {
               <h2 className='product-detail-title'>{detail.name}</h2>
               <hr />
               <div className='product-detail-prices'>
-                <h4 className='product-detail-last-price'>${detail.lastPrice}</h4>
+                <h4 className='product-detail-last-price'>${detail.lastprice}</h4>
                 <h4 className='product-detail-price'>${detail.price}_</h4>
               </div>
               <img className='product-detail-payment' src={pago} alt="" />
@@ -37,8 +42,10 @@ const Detail = ({detail}) => {
                             </div>}
 
           <div className='product-detail-buttons'>
-
-              <button className="btn btn-primary btn-detail-prod">agregar al carrito <BsCartPlus className='icon-cart-button'/></button>
+              <button className="btn btn-primary btn-detail-prod" onClick={() => {
+                dispatch({type:'ADD', payload: detail} )
+                swal("Producto agregado", "Click en el carrito para ver tu pedido o agregar mas cantidad.", "success");
+                }}>Agregar al carrito <BsCartPlus className='icon-cart-button'/></button>
             <Link to='/zapatillas'>
               <button className="btn btn-secondary btn-detail-prod">Volver al catalogo <RiArrowGoBackFill className='icon-cart-button'/></button>
             </Link>

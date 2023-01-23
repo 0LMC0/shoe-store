@@ -24,7 +24,7 @@ const RelatedProducts = () => {
         {Data.map((pr) => (
         <m.div 
         whileHover={{ scale: [null, 1.05, 1.05] }}
-        transition={{ duration: 0.3 }}  key={pr.id}>
+        transition={{ duration: 0.3 }}  key={pr.id} {...pr}>
             <Link to={`/zapatillas/${pr.id}`}>
                 <img className='related-img' src={pr.img} alt="" />
             </Link>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom'
 import {TiTick} from 'react-icons/ti'
 import {ImCross} from 'react-icons/im'
-import {FaPercentage, FaCartPlus} from 'react-icons/fa'
+import {FaPercentage} from 'react-icons/fa'
 import {BsFillCaretDownFill} from 'react-icons/bs'
 import { motion as m } from 'framer-motion'
 import Skeleton,{ SkeletonTheme } from 'react-loading-skeleton'
@@ -10,10 +10,13 @@ import 'react-loading-skeleton/dist/skeleton.css'
 
 
 // ri
-import {BsArrowRightSquareFill} from "react-icons/bs"
+import {BsArrowRightSquareFill} from "react-icons/bs" 
+// css
 import './cards.css'
 const Card = ({prop}) => {
 
+
+// loading
     const [Loading, setLoading] = useState(true)
 
     useEffect(() => {
@@ -101,7 +104,6 @@ const Card = ({prop}) => {
                                </div>
                                    }
                            <Link to={`/zapatillas/${producto.id}`} className='product-btn'>Ver detalle <BsArrowRightSquareFill className='icon-card'/></Link>
-                           <button className='product-btn-cart'>Agregar al carrito <FaCartPlus className='icon-card' /></button>
                        </m.div>
                    </div>
                ))}
