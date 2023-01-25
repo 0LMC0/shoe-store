@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import './detail.css'
 import pago from '../../../../../assets/img/zptlls/pago.jpg'
 import {BsCartPlus} from 'react-icons/bs'
@@ -40,6 +40,13 @@ const Detail = ({detail}) => {
                             <div className='product-oferta'>
                               <p>Hace tu consulta</p>
                             </div>}
+
+
+            {detail.talles.map(talle => 
+              <div key={talle.index}>
+                <button onClick={console.log(talle.index)}>{talle}</button>
+              </div>
+            )}
 
           <div className='product-detail-buttons'>
               <button className="btn btn-primary btn-detail-prod" onClick={() => {

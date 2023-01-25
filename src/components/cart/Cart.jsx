@@ -15,8 +15,6 @@ const Cart = () => {
         return total+item.price*item.quantity
     }, 0)
 
-    console.log(state.item)
-
   return (
     <div className='cart'>
         
