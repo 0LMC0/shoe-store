@@ -10,12 +10,35 @@ import RelatedProducts from './RelatedProducts/RelatedProducts'
 import { CartContext } from '../../../../../context/CartContext'
 import swal from 'sweetalert'
 
+import ItemCount from '../../../../../components/ItemCount/ItemCount'
+
 const Detail = ({detail}) => {
+
+  const talles = detail.talles
+
+  // se guarda la variable del cambio en talles
+  const [Talle, setTalle] = useState({})
+
+  const handleChange = (e) => {
+    setTalle(e.target.value);
+  }
+
+
+  const onAdd = (qty) => {
+    detail.quantity = qty;
+    dispatch({type:'ADD', payload: detail} )
+    swal(`Agregaste ${qty} ${detail.name} talle ${Talle}`, "Click en el carrito para ver tu pedido o agregar mas cantidad.", "success");
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  }
+
 
   const globalState = useContext(CartContext)
   const dispatch = globalState.dispatch;
 
-  detail.quantity =1;
+  
 
   return  (
     <div className='container'>
@@ -32,7 +55,8 @@ const Detail = ({detail}) => {
               <img className='product-detail-payment' src={pago} alt="" />
               <p className='product-detail-description'><strong>ENVIO GRATIS</strong> a partir de <strong>$20.000_</strong></p>
               <hr />
-              <p className='product-detail-small'>En stock = {detail.stock ? <TiTick className='icon-stock-true'/> : <ImCross className='icon-stock-cross'/>}</p>
+              <p className='product-detail-small'>En stock = {detail.stock > 1 ? <TiTick className='icon-stock-true'/> : <ImCross className='icon-stock-cross'/>}</p>
+
 
             {detail.oferta ? <div className='product-oferta'>
                               <p>En promo combo</p>
@@ -41,18 +65,19 @@ const Detail = ({detail}) => {
                               <p>Hace tu consulta</p>
                             </div>}
 
-
-            {detail.talles.map(talle => 
-              <div key={talle.index}>
-                <button onClick={console.log(talle.index)}>{talle}</button>
-              </div>
-            )}
-
+    <form onSubmit={handleSubmit}>
+        <label>
+          selecciona el talle disponible:
+          <select onChange={handleChange}>
+          {talles.map((e, i) => {
+            return <option key={e} >{e}</option>
+          })}
+          </select>
+          <ItemCount type="submit" onAdd={onAdd} initial={1} stock={detail.stock} />
+        </label>
+    </form>
+      
           <div className='product-detail-buttons'>
-              <button className="btn btn-primary btn-detail-prod" onClick={() => {
-                dispatch({type:'ADD', payload: detail} )
-                swal("Producto agregado", "Click en el carrito para ver tu pedido o agregar mas cantidad.", "success");
-                }}>Agregar al carrito <BsCartPlus className='icon-cart-button'/></button>
             <Link to='/zapatillas'>
               <button className="btn btn-secondary btn-detail-prod">Volver al catalogo <RiArrowGoBackFill className='icon-cart-button'/></button>
             </Link>

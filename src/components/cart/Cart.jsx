@@ -23,6 +23,7 @@ const Cart = () => {
                 <img src={item.img} alt="" />
                 <p>{item.name}</p>
                 <p>{item.quantity * item.price}</p>
+                <p>{item.talle}</p>
 
                 <div className='quantity'>
                     <button onClick={ () => dispatch({type:'INCREASE', payload:item})}>+</button>

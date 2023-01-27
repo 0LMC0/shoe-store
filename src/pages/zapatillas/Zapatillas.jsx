@@ -15,7 +15,11 @@ const Zapatillas = () => {
     transition={{duration: 2, ease: "easeIn"}}
     exit={{ opacity:0, y: "-100%",  transition:{duration: 0.5}}}
     className='shoes-container'>
-      <img className='banner-principal' src={bannerPrincipal} alt="" />
+      <div className='banner_shop'>
+        <p>breadcrum/Productos</p>
+        <h3>Tienda Online</h3>
+        
+      </div>
       <div className="card-container">
         <CardContainer />
       </div>

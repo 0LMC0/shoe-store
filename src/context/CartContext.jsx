@@ -8,11 +8,8 @@ export const Context = (props) => {
         switch(action.type){
             case 'ADD': 
                 const tempState = state.filter((item) => action.payload.id === item.id)
-                if(tempState.length > 0){
-                    return state
-                }else{
                     return [...state, action.payload]
-                }
+
 
             case 'INCREASE' :
                 const tempState1 = state.map((item) => {

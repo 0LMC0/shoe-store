@@ -36,7 +36,10 @@ const MainFold = () => {
               }}/>
           </span>
         </h1>
-        <p className='mainFold-description'>¿Estas buscando tu proximo par de zapas? Llegaste al lugar correcto! Tenemos muchas marcas y modelos disponibles en todos los talles. <br /> <strong > Chequea el catalogo haciendo click en el boton <BsFillArrowDownLeftSquareFill className='downleft-arrow' /></strong></p>
+        <p className='mainFold-description'>¿Estas buscando tu proximo par de zapas? Llegaste al lugar correcto! Tenemos muchas marcas y modelos disponibles en todos los talles.</p>
+        
+        <br />
+        <p><strong > Chequea el catalogo haciendo click en el boton <BsFillArrowDownLeftSquareFill className='downleft-arrow' /></strong></p>
         <div className='mainFold-price-btn'>
         <m.button
             className='btn btn-primary'
@@ -53,10 +56,6 @@ const MainFold = () => {
         </div>
       </div>
     </div>
-      <m.img
-        whileHover={{ scale: [null, 1.20, 1.05] }}
-        transition={{ duration: 0.3 }} 
-      src={overlay} alt="overlay" className='overlayImg' />
     </div>
       </m.div>
   
